@@ -47,7 +47,7 @@ app.delete('/users/:id', function (req, res) {
     let {id} = req.params;
     let result = employees[id];
     if(!result || result > employees.length) {
-        res.status(401).send("Invalid user id");
+        res.status(401).send("Invalid User ID");
         return 0;
     }
     employees.splice(id, 1);
